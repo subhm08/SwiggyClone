@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "parctice for react by shubham kumar",
   "main": "app.js",
-  
+  "homepage": "https://subhm08.github.io/SwiggyClone/",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -25,6 +25,7 @@
     "reactdom": "^2.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "process": "^0.11.10"
   }
 }
