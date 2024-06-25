@@ -2965,7 +2965,7 @@ const ResCard = (props)=>{
                     alt: ""
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 14,
+                    lineNumber: 13,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -2973,7 +2973,7 @@ const ResCard = (props)=>{
                     children: name
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 15,
+                    lineNumber: 14,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -2981,7 +2981,7 @@ const ResCard = (props)=>{
                     children: cuisines.join(" ")
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 16,
+                    lineNumber: 15,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -2989,7 +2989,7 @@ const ResCard = (props)=>{
                     children: locality
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -2997,7 +2997,7 @@ const ResCard = (props)=>{
                     children: costForTwo
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 18,
+                    lineNumber: 17,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -3007,20 +3007,20 @@ const ResCard = (props)=>{
                             className: "bi bi-star-fill"
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 19,
+                            lineNumber: 18,
                             columnNumber: 42
                         }, undefined),
                         avgRating
                     ]
                 }, void 0, true, {
                     fileName: "src/app.js",
-                    lineNumber: 19,
+                    lineNumber: 18,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 13,
+            lineNumber: 12,
             columnNumber: 13
         }, undefined)
     }, void 0, false);
@@ -3037,9 +3037,9 @@ const Res = ()=>{
         const FetchedData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.595128&lng=85.162572&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const resList = await FetchedData.json();
         const data = resList.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        setDataList(data);
+        setDataList(resList.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(dataList);
     };
-    console.log(dataList);
     console.table(dataList);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [

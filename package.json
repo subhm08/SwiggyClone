@@ -16,6 +16,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
     "parcel": "^2.10.3",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.11.3",
@@ -26,5 +28,6 @@
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "process": "^0.11.10"
-  }
+  },
+  "Access-Control-Allow-Origin": "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.595128&lng=85.162572&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 }

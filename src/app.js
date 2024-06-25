@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import '../style.css';
 import { ShimmerPostList } from "react-shimmer-effects";
-
 const ResCard = (props) => {
 
     const { cloudinaryImageId, name, cuisines, locality, costForTwo, avgRating } = props;
@@ -31,9 +30,10 @@ const Res = () => {
         const FetchedData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.595128&lng=85.162572&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const resList = await FetchedData.json();
         const data = resList.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        setDataList(data);
+        setDataList(resList.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(dataList);
     }
-    console.log(dataList);
+    
     console.table(dataList);
     return (
         <>
